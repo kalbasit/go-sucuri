@@ -1,0 +1,137 @@
+{
+    "BLACKLIST": {
+        "INFO": [
+            [
+                "Domain clean by Google Safe Browsing: johnhackedsite.com",
+                "http://safebrowsing.clients.google.com/safebrowsing/diagnostic?site=johnhackedsite.com"
+            ],
+            [
+                "Domain clean by Norton Safe Web: johnhackedsite.com",
+                "http://safeweb.norton.com/report/show?url=johnhackedsite.com"
+            ],
+            [
+                "Domain clean on PhishTank: johnhackedsite.com",
+                "http://www.phishtank.com/"
+            ],
+            [
+                "Domain clean on the Opera browser: johnhackedsite.com",
+                "http://opera.com/"
+            ],
+            [
+                "Domain clean by SiteAdvisor: johnhackedsite.com",
+                "http://www.siteadvisor.com/sites/johnhackedsite.com"
+            ],
+            [
+                "Domain clean by the Sucuri Malware Labs: johnhackedsite.com",
+                "http://labs.sucuri.net/?blacklist=johnhackedsite.com"
+            ],
+            [
+                "Domain clean on SpamHaus DBL: johnhackedsite.com",
+                "http://www.spamhaus.org/query/domain/johnhackedsite.com"
+            ],
+            [
+                "Domain clean on Yandex (via Sophos): johnhackedsite.com",
+                "http://www.yandex.com/infected?url=johnhackedsite.com&amp;l10n=en"
+            ],
+            [
+                "Domain clean by ESET: johnhackedsite.com",
+                "http://labs.sucuri.net/?eset"
+            ]
+        ]
+    },
+    "LINKS": {
+        "JSEXTERNAL": [
+            "http://welcometotheglobalisnet.com/js.php?kk=25"
+        ],
+        "JSLOCAL": [
+            "/wp-content/themes/twentythirteen/js/html5.js",
+            "/wp-includes/js/jquery/jquery.js?ver=1.12.4",
+            "/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1",
+            "/wp-includes/js/imagesloaded.min.js?ver=3.2.0",
+            "/wp-includes/js/masonry.min.js?ver=3.3.2",
+            "/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b",
+            "/wp-content/themes/twentythirteen/js/functions.js?ver=20150330",
+            "/wp-includes/js/wp-embed.min.js?ver=4.8.2"
+        ],
+        "URL": [
+            "/",
+            "/2017/08/11/spend-money-on-investigate-reports-online-and-get/",
+            "/category/writers-tips/",
+            "/author/editor/",
+            "/2017/08/02/looking-to-find-imaginative-simply-writing/",
+            "/category/education-platform/",
+            "/2017/07/31/choose-custom-crafted-novel-comments-by-way-of-the/",
+            "/category/paper-writing/",
+            "/2017/07/21/elegant-report-outline-4/",
+            "/category/uncategorized/",
+            "/2017/07/20/specificity-of-article-writing-the-thesis/",
+            "/category/international-education/",
+            "/2017/07/18/americans-don-t-speak-english-7/",
+            "/2017/07/15/technical-implies-used-for-getting-and-checking/",
+            "/category/best-education/",
+            "/2017/07/13/seventeen-reasons-to-suspend-glyphosate-4/",
+            "/2017/07/13/classification-product-marketing-strategy/",
+            "/2017/07/12/nevertheless-anxious-regarding-your-dissertation/",
+            "/category/college-study-tours/",
+            "/page/2/"
+        ]
+    },
+    "MALWARE": {
+        "WARN": [
+            [
+                "Security warning in the URL: http://johnhackedsite.com/",
+                "*Known Spam detected. Details: http://labs.sucuri.net/db/malware/spam-seo.spammy_keywords?19.16\n&lt;/script&gt; &lt;a href=&quot;http://atlantic-drugs.net/products/viagra.htm&quot;; target=&quot;_blank&quot;&gt;viagra&lt;/a&gt; &lt;/center&gt;\n"
+            ],
+            [
+                "Blacklisted javascript included on:  http://johnhackedsite.com",
+                "*Javascript included from a blacklisted domain. Details: http://sucuri.net/malware/entry/MW:BLK:2\nJavascript: welcometotheglobalisnet.com"
+            ],
+            [
+                "Security warning in the URL (for Google's UA): http://johnhackedsite.com",
+                "*Known Spam detected. Details: http://labs.sucuri.net/db/malware/spam-seo.spammy_keywords?19.16\n&lt;/script&gt; &lt;a href=&quot;http://atlantic-drugs.net/products/viagra.htm&quot;; target=&quot;_blank&quot;&gt;viagra&lt;/a&gt; &lt;/center&gt;\n"
+            ]
+        ]
+    },
+    "SCAN": {
+        "DOMAIN": [
+            "johnhackedsite.com"
+        ],
+        "IP": [
+            "192.124.249.64"
+        ],
+        "SITE": [
+            "http://johnhackedsite.com"
+        ]
+    },
+    "SYSTEM": {
+        "NOTICE": [
+            "Running on: nginx",
+            "Running on: Sucuri/Firewall"
+        ]
+    },
+    "VERSION": {
+        "BUILDDATE": [
+            "14 Dec 2017 16:56 UTC"
+        ],
+        "COMPILEDDATE": [
+            "14 Dec 2017 21:56 UTC"
+        ],
+        "DBDATE": [
+            "11 Dec 2017 20:05 UTC"
+        ],
+        "VERSION": [
+            "1.4"
+        ]
+    },
+    "WEBAPP": {
+        "INFO": [
+            [
+                "Application: WordPress 4.8.2",
+                "http://www.wordpress.org"
+            ]
+        ],
+        "VERSION": [
+            "WordPress version:  4.8.2"
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "BLACKLIST": {
+        "INFO": [
+            [
+                "Domain clean by Google Safe Browsing: google.com",
+                "http://safebrowsing.clients.google.com/safebrowsing/diagnostic?site=google.com"
+            ],
+            [
+                "Domain clean by Norton Safe Web: google.com",
+                "http://safeweb.norton.com/report/show?url=google.com"
+            ],
+            [
+                "Domain clean on PhishTank: google.com",
+                "http://www.phishtank.com/"
+            ],
+            [
+                "Domain clean on the Opera browser: google.com",
+                "http://opera.com/"
+            ],
+            [
+                "Domain clean by SiteAdvisor: google.com",
+                "http://www.siteadvisor.com/sites/google.com"
+            ],
+            [
+                "Domain clean by the Sucuri Malware Labs: google.com",
+                "http://labs.sucuri.net/?blacklist=google.com"
+            ],
+            [
+                "Domain clean on SpamHaus DBL: google.com",
+                "http://www.spamhaus.org/query/domain/google.com"
+            ],
+            [
+                "Domain clean on Yandex (via Sophos): google.com",
+                "http://www.yandex.com/infected?url=google.com&amp;l10n=en"
+            ],
+            [
+                "Domain clean by ESET: google.com",
+                "http://labs.sucuri.net/?eset"
+            ]
+        ]
+    },
+    "LINKS": {
+        "JSLOCAL": [
+            "/recaptcha/api.js"
+        ],
+        "URL": [
+            "/policies/terms/"
+        ]
+    },
+    "RECOMMENDATIONS": [
+        [
+            "Security Header: X-Content-Type nosniff",
+            "We did not find the recommended security header to prevent Content Type sniffing on your site. ",
+            "http://kb.sucuri.net/warnings/hardening/headers-x-content-type"
+        ]
+    ],
+    "SCAN": {
+        "DOMAIN": [
+            "google.com"
+        ],
+        "IP": [
+            "74.125.21.138"
+        ],
+        "SITE": [
+            "http://google.com"
+        ]
+    },
+    "SYSTEM": {
+        "INFO": [
+            "Redirects to: http://ipv6.google.com/sorry/index?continue=http://google.com/&amp;q=EhAmADwCAAAAAPA8kf_-m8ysGJvmg9MFIhkA8aeDS5oeEl72p_I0abbJjGhRWpn_S-2RMgFy"
+        ],
+        "NOTICE": [
+            "Running on: HTTP"
+        ]
+    },
+    "VERSION": {
+        "BUILDDATE": [
+            "14 Dec 2017 16:56 UTC"
+        ],
+        "COMPILEDDATE": [
+            "14 Dec 2017 21:56 UTC"
+        ],
+        "DBDATE": [
+            "11 Dec 2017 20:05 UTC"
+        ],
+        "VERSION": [
+            "1.4"
+        ]
+    }
+}
