@@ -85,7 +85,7 @@ func (c *Client) Scan(domain string) (*ScanResult, error) {
 		if err != nil {
 			b = []byte{}
 		}
-		return nil, fmt.Errorf("the API has returned: " + res.Status + " Body: " + string(b))
+		return nil, fmt.Errorf("the API has returned: %s Body: %s", res.Status, string(b))
 	}
 	// parse the body
 	if err = json.NewDecoder(res.Body).Decode(&sr); err != nil {

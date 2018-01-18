@@ -15,6 +15,7 @@ import (
 const key = "api_key"
 
 func TestScan(t *testing.T) {
+	status := http.StatusOK
 	// create the test server that will emulate the Sucuri API
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// check the required parameters
@@ -38,14 +39,18 @@ func TestScan(t *testing.T) {
 			http.Error(w, fmt.Sprintf("path is set to %q, must be set to %q", r.URL.Path, scanPath), http.StatusBadRequest)
 			return
 		}
-		// fetch the asset from testdata
-		assetPath := fmt.Sprintf("testdata/scan-%s.json", r.URL.Query().Get("host"))
-		response, err := testdata.Asset(assetPath)
-		if err != nil {
-			http.Error(w, fmt.Sprintf("error fetching the asset %q from the testdata: %s", assetPath, err), http.StatusNotFound)
-			return
+		if status == http.StatusOK {
+			// fetch the asset from testdata
+			assetPath := fmt.Sprintf("testdata/scan-%s.json", r.URL.Query().Get("host"))
+			response, err := testdata.Asset(assetPath)
+			if err != nil {
+				http.Error(w, fmt.Sprintf("error fetching the asset %q from the testdata: %s", assetPath, err), http.StatusNotFound)
+				return
+			}
+			w.Write([]byte(response))
+		} else {
+			w.WriteHeader(status)
 		}
-		w.Write([]byte(response))
 	}))
 	defer srv.Close()
 
@@ -73,6 +78,14 @@ func TestScan(t *testing.T) {
 
 	c, err := NewClient(srv.URL, key)
 	require.NoError(t, err)
+
+	t.Run("returns an error if the server returned a non 200 OK response", func(t *testing.T) {
+		status = http.StatusNotFound
+		defer func() { status = http.StatusOK }()
+
+		_, err := c.Scan("google.com")
+		assert.EqualError(t, err, "the API has returned: 404 Not Found Body: ")
+	})
 
 	t.Run("testdata/scan-google.com.json", func(t *testing.T) {
 		res, err := c.Scan("google.com")
