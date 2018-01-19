@@ -1,0 +1,91 @@
+{
+	"BLACKLIST": {
+		"INFO": [
+			[
+				"Domain clean by Google Safe Browsing: trafficconverter.biz",
+				"http://safebrowsing.clients.google.com/safebrowsing/diagnostic?site=trafficconverter.biz"
+			],
+			[
+				"Domain clean by Norton Safe Web: trafficconverter.biz",
+				"http://safeweb.norton.com/report/show?url=trafficconverter.biz"
+			],
+			[
+				"Domain clean on PhishTank: trafficconverter.biz",
+				"http://www.phishtank.com/"
+			],
+			[
+				"Domain clean on the Opera browser: trafficconverter.biz",
+				"http://opera.com/"
+			],
+			[
+				"Domain clean by the Sucuri Malware Labs: trafficconverter.biz",
+				"http://labs.sucuri.net/?blacklist=trafficconverter.biz"
+			],
+			[
+				"Domain clean on SpamHaus DBL: trafficconverter.biz",
+				"http://www.spamhaus.org/query/domain/trafficconverter.biz"
+			],
+			[
+				"Domain clean on Yandex (via Sophos): trafficconverter.biz",
+				"http://www.yandex.com/infected?url=trafficconverter.biz&amp;l10n=en"
+			],
+			[
+				"Domain clean by ESET: trafficconverter.biz",
+				"http://labs.sucuri.net/?eset"
+			]
+		],
+		"WARN": [
+			[
+				"Domain blacklisted by SiteAdvisor (McAfee): trafficconverter.biz",
+				"http://www.siteadvisor.com/sites/trafficconverter.biz"
+			]
+		]
+	},
+	"RECOMMENDATIONS": [
+		[
+			"Security Header: X-XSS-Protection Missing",
+			"We did not find the recommended security header for XSS Protection on your site. ",
+			"http://kb.sucuri.net/warnings/hardening/headers-x-xss-protection"
+		],
+		[
+			"Security Header: X-Frame-Options",
+			"We did not find the recommended security header for ClickJacking Protection on your site. ",
+			"http://kb.sucuri.net/warnings/hardening/headers-x-frame-clickjacking"
+		],
+		[
+			"Security Header: X-Content-Type nosniff",
+			"We did not find the recommended security header to prevent Content Type sniffing on your site. ",
+			"http://kb.sucuri.net/warnings/hardening/headers-x-content-type"
+		]
+	],
+	"SCAN": {
+		"DOMAIN": [
+			"trafficconverter.biz"
+		],
+		"IP": [
+			"38.102.150.28"
+		],
+		"SITE": [
+			"http://trafficconverter.biz"
+		]
+	},
+	"SYSTEM": {
+		"ERROR": [
+			"Unable to properly scan your site. Site returning error (40x):  HTTP/1.1 404 Not Found"
+		]
+	},
+	"VERSION": {
+		"BUILDDATE": [
+			"14 Dec 2017 16:56 UTC"
+		],
+		"COMPILEDDATE": [
+			"14 Dec 2017 21:56 UTC"
+		],
+		"DBDATE": [
+			"11 Dec 2017 20:05 UTC"
+		],
+		"VERSION": [
+			"1.4"
+		]
+	}
+}

@@ -60,3 +60,10 @@ type ScanResult struct {
 		Version []string   `json:"VERSION,omitempty"`
 	} `json:"WEBAPP,omitempty"`
 }
+
+// Blacklisted returns true if the site or any of the files it serves is
+// blacklisted by any third party site advisor or anti-virus product supported
+// by Sucuri.
+func (sr *ScanResult) Blacklisted() bool {
+	return len(sr.Blacklist.Warn) > 0 || len(sr.Malware.Warn) > 0
+}
